@@ -9,6 +9,7 @@ function debug() {
     animateDuckTalking();
 }
 
+
 function displayResponseWithTypingEffect(response) {
     var responseElement = document.getElementById('duckResponse');
     responseElement.innerHTML = ''; // Clear previous content
@@ -21,6 +22,7 @@ function displayResponseWithTypingEffect(response) {
             clearInterval(typingInterval);
         }
     }, 50); 
+    
 }
 
 function generateDuckResponse(problem) {
@@ -40,7 +42,8 @@ function generateDuckResponse(problem) {
         "Let's think outside the box... or should I say outside the pond?...",
         "It's not a bug, it's a feature!...",
         "Remember, the journey of a thousand bugs begins with a single line of code...",
-        "Keep calm and code on! ..."
+        "Keep calm and code on! ...",
+
     ];
     var randomIndex = Math.floor(Math.random() * responses.length);
     return responses[randomIndex];
