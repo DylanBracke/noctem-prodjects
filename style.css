@@ -1,13 +1,54 @@
+
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    color: transparent;
+
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #ebebeb;
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+  }
+
+
+
+html {
+    
+    cursor: url(./assests/vectors/cursors/cursor-black.svg), pointer !important;
+  }
+  
+ 
+  .link-hover, a , .hamburger svg {
+    cursor: url(./assests/vectors/cursors/cursor-blue.svg), pointer !important;
+  }
+  
+  .button-hover, button {
+    cursor: url(./assests/vectors/cursors/cursor-blue.svg), pointer !important;
+  }
+
+
 body {
     background-color: #0e0e0e;
     color: #fff;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    margin: 0 40px;
 }
 
 .container {
@@ -15,6 +56,7 @@ body {
 }
 
 h1 {
+    font-family: 'Bakbak One', sans-serif;
     font-size: 36px;
     margin-bottom: 30px;
 }
@@ -22,15 +64,26 @@ h1 {
 table {
     width: 100%;
     max-width: 600px;
-    border-collapse: collapse;
-    border: 2px solid #333;
+    border: 2px solid white;
     margin-bottom: 30px;
     table-layout: fixed;
+    border-radius: 8px;
+    background-color: #101010;
+    overflow: hidden;
 }
 
+th {
+   
+    color: #fff;
+    font-weight: normal;
+}
+
+td{
+    background-color: #020202;
+}
 th, td {
     padding: 15px;
-    border-bottom: 1px solid #333;
+    
     word-wrap: break-word;
 }
 
