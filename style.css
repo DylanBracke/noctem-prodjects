@@ -1,22 +1,22 @@
 
-/* width */
+
 ::-webkit-scrollbar {
     width: 4px;
   }
   
-  /* Track */
+  
   ::-webkit-scrollbar-track {
     color: transparent;
 
   }
   
-  /* Handle */
+  
   ::-webkit-scrollbar-thumb {
     background: #ebebeb;
     border-radius: 10px;
   }
   
-  /* Handle on hover */
+  
   ::-webkit-scrollbar-thumb:hover {
     background: #ffffff;
   }
@@ -94,7 +94,7 @@ a {
 }
 
 a:hover {
-    color: #39a0e6;
+    color: yellow;
 }
 
 @media screen and (max-width: 600px) {
