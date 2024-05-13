@@ -1,4 +1,7 @@
-
+:root{
+    --color-blue: #043AFB;
+    transition: color 0.3s ease;
+}
 
 ::-webkit-scrollbar {
     width: 4px;
@@ -29,12 +32,13 @@ html {
   }
   
  
-  .link-hover, a , .hamburger svg {
+   a, tr:has(a)  {
     cursor: url(./assests/vectors/cursors/cursor-blue.svg), pointer !important;
   }
   
-  .button-hover, button {
-    cursor: url(./assests/vectors/cursors/cursor-blue.svg), pointer !important;
+  
+  tr th {
+    font-weight: 600;
   }
 
 
@@ -64,7 +68,7 @@ h1 {
 table {
     width: 100%;
     max-width: 600px;
-    border: 2px solid white;
+    border: 2px solid rgb(59, 59, 59);
     margin-bottom: 30px;
     table-layout: fixed;
     border-radius: 8px;
@@ -80,6 +84,7 @@ th {
 
 td{
     background-color: #020202;
+    display: flex;
 }
 th, td {
     padding: 15px;
@@ -88,13 +93,40 @@ th, td {
 }
 
 a {
-    color: #66c2ff;
+    color: whitesmoke;
     text-decoration: none;
     transition: color 0.3s ease;
+    justify-content: center;
+    display: flex;
+    flex-grow: 1;
+    justify-content: space-between;
+    padding: 0 40px;
 }
 
-a:hover {
-    color: yellow;
+a::after {
+    content: "";
+    
+    display: inline-block;
+    width: 2em;
+    height: 1em;
+    margin-bottom: 1px;
+    margin-left: 8px;
+    background: url(./assests//vectors/eye-grey.svg) no-repeat center center / contain;
+    vertical-align: middle;
+   
+}
+
+td:has(a):hover {
+    background-color: #01071b;
+    
+}
+
+td:hover a {
+    color: var(--color-blue);
+}
+
+td:hover a::after {
+    background: url(./assests//vectors/eye.svg) no-repeat center center / contain;
 }
 
 @media screen and (max-width: 600px) {
